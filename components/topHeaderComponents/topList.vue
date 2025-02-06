@@ -13,7 +13,12 @@
 <script lang="ts" setup>
 import {} from 'vue'
 
-const dataList = [
+type DataList = {
+  name: string
+  link: string
+}[]
+
+const dataList: DataList[] = [
   [
     { name: '日一食', link: 'https://www.google.com' },
     { name: '關於日一食', link: 'https://www.google.com' },
