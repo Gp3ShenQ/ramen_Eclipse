@@ -31,8 +31,8 @@ const videoBoxSize = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.video-area',
-      start: 'center 35%',
-      end: 'center 20%',
+      start: 'center 43%',
+      end: 'center 30%',
       scrub: true,
     },
   })
