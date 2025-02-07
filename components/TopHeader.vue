@@ -16,7 +16,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="w-full h-full">1234</div> -->
   </div>
 </template>
 
@@ -26,15 +25,4 @@ import {} from 'vue'
 import TopList from '@/components/topHeaderComponents/TopList.vue'
 </script>
 
-<style scoped lang="scss">
-.text-vertical {
-  -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
-}
-
-.mask {
-  clip-path: inset(40% round 50px);
-  // mask-image: linear-gradient(black 0, black 15%, transparent 15%, transparent 100%, black 100%, black 100%), linear-gradient(to right, black 0, black 5%, transparent 15%, transparent 85%, black 95%, black 100%); // 正方形遮罩
-  // -webkit-mask-image: linear-gradient(black 0, black 15%, transparent 15%, transparent 100%, black 100%, black 100%), linear-gradient(to right, black 0, black 15%, transparent 15%, transparent 85%, black 85%, black 100%); // 正方形遮罩
-}
-</style>
+<style scoped lang="scss"></style>
