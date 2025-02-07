@@ -1,10 +1,11 @@
 <template>
   <div class="relative z-[2] p-10 w-full">
-    <div class="top-0 left-0 absolute p-5">
-      <img class="w-full" src="/public/bottomData/background.png" alt="" />
+    <div class="top-0 left-0 absolute w-full h-full">
+      <img class="w-full h-full" src="/public/bottomData/background.png" alt="" />
     </div>
     <div class="relative">
       <topData />
+      <bottomData />
     </div>
   </div>
 </template>
@@ -13,4 +14,5 @@
 import {} from 'vue'
 
 import topData from '@/components/bottomDataComponents/topData.vue'
+import bottomData from '@/components/bottomDataComponents/bottomData.vue'
 </script>

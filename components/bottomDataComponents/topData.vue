@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex max-[1024px]:flex-col w-full">
+  <div class="flex max-[1024px]:flex-col w-full">
     <div class="flex">
       <img class="pt-30" src="/public/bottomData/ramen_bar.png" alt="" />
       <p class="mt-10 -ml-15 en-font-700 text-[#E2DAB2] text-4xl text-vertical">当店のこだわり</p>

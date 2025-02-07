@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="flex max-[1000px]:justify-center items-end max-[1000px]:mt-5 w-1/3 max-[1000px]:w-full">
+    <div class="flex max-[1000px]:justify-center items-center max-[1000px]:mt-5 w-1/3 max-[1000px]:w-full">
       <img class="max-[550px]:w-[365px] max-w-[400px]" src="/public/MiddleData/ramen3.jpg" alt="" />
     </div>
   </div>
