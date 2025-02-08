@@ -1,11 +1,11 @@
 <template>
-  <div class="flex-col max-[530px]:flex-col justify-center items-between bg-cover bg-center px-60 max-sm:px-5 max-md:px-15 max-lg:px-30 pt-30 w-full max-w-[2000px]">
-    <div class="flex justify-between w-full">
+  <div class="max-[530px]:flex-col justify-center items-between px-60 max-sm:px-5 max-md:px-15 max-lg:px-30 pt-30 w-full max-w-[2000px]">
+    <div class="relative z-10 flex justify-between w-full">
       <div class="relative flex max-[550px]:flex-col items-center gap-10">
         <img class="-mt-25 w-full max-w-[100px] cursor-pointer" src="/public/topHeader/Mark.png" alt="" />
         <TopList />
       </div>
-      <div class="relative z-10 w-auto h-full">
+      <div class="w-auto h-full">
         <div class="max-[530px]:relative top-0 right-0 absolute max-[530px]:mt-5">
           <div class="flex gap-5">
             <div class="en-font-400 text-[#E2DAB2] text-5xl text-vertical min-[1300px]:text-7xl max-[530px]:text-4xl">必食。</div>
