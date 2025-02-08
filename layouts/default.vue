@@ -10,6 +10,7 @@
     <TopHeader />
     <MiddleData />
     <BottomData />
+    <Footer />
     <slot />
   </div>
 </template>
@@ -22,6 +23,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import TopHeader from '@/components/TopHeader.vue'
 import MiddleData from '@/components/MiddleData.vue'
 import BottomData from '@/components/BottomData.vue'
+import Footer from '@/components/Footer.vue'
 
 const initGsap = () => {
   gsap.registerPlugin(ScrollTrigger)

@@ -16,10 +16,10 @@
     </div>
     <div class="max-[600px]:flex max-[600px]:flex-col">
       <div class="flex justify-end max-[600px]:justify-center max-[600px]:mt-10 pl-30 max-[600px]:pl-0">
-        <img class="max-[600px]:w-[375px] max-w-[375px] max-w-[500px]" src="/public/bottomData/niku_stong.png" alt="" />
+        <img class="max-[600px]:w-full max-w-[500px]" src="/public/bottomData/niku_stong.png" alt="" />
       </div>
       <div class="max-[600px]:flex max-[600px]:justify-center -mt-15 max-[600px]:mt-10">
-        <img class="max-[600px]:w-[375px] max-w-[375px]" src="/public/bottomData/saka.png" alt="" />
+        <img class="max-[600px]:w-full max-w-[375px]" src="/public/bottomData/saka.png" alt="" />
       </div>
     </div>
   </div>

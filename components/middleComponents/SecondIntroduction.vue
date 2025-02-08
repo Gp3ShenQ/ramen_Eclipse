@@ -17,7 +17,7 @@
           <p>為您奉上最正宗的美味體驗。</p>
         </div>
         <div class="flex justify-center min-[1000px]:hidden">
-          <img class="max-[550px]:w-[365px] max-w-[400px]" src="/public/MiddleData/niku.png" alt="" />
+          <img class="w-full max-w-[400px]" src="/public/MiddleData/niku.png" alt="" />
         </div>
         <div class="flex flex-col gap-5 mt-50 max-[1000px]:mt-5 en-font-400 text-center">
           <p>我們選用優質的日本食材（日本の食材）</p>
@@ -26,7 +26,7 @@
           <p>讓您每一口都能感受到本格的な風味</p>
         </div>
         <div class="flex justify-center min-[1000px]:hidden">
-          <img class="max-[550px]:w-[365px] max-w-[400px]" src="/public/MiddleData/inner_house.png" alt="" />
+          <img class="w-full max-w-[400px]" src="/public/MiddleData/inner_house.png" alt="" />
         </div>
         <div class="flex flex-col gap-5 mt-50 max-[1000px]:mt-5 px-5 en-font-400 text-center">
           <p>我們使用品牌地鶏（ブランド地鶏）和其他頂級食材</p>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="flex max-[1000px]:justify-center items-center max-[1000px]:mt-5 w-1/3 max-[1000px]:w-full">
-      <img class="max-[550px]:w-[365px] max-w-[400px]" src="/public/MiddleData/ramen3.jpg" alt="" />
+      <img class="w-full max-w-[400px]" src="/public/MiddleData/ramen3.jpg" alt="" />
     </div>
   </div>
 </template>
