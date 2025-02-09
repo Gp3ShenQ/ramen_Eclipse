@@ -8,7 +8,7 @@
         <img class="w-full max-w-[500px]" src="/public/MiddleData/business_card.png" alt="" />
       </div>
     </div>
-    <div class="flex flex-col items-center gap-20 px-20 max-[768px]:px-5 pt-10 en-font-700 text-[#E2DAB2] text-center">
+    <div ref="promiseTop" class="flex flex-col items-center gap-20 px-20 max-[768px]:px-5 pt-10 en-font-700 text-[#E2DAB2] text-center">
       <div class="">
         <div class="mb-10 text-3xl leading-10">歡迎來到【日一食】——極致拉麵與燒肉體驗</div>
         <p>在【日一食】，我們嚴選上等食材，融合傳統與創新，只為帶給您最純粹的日式美味。</p>
@@ -28,15 +28,43 @@
         <div class="mb-10 text-3xl leading-10">日式職人精神，打造無與倫比的用餐體驗</div>
         <p class="pt-5">在【日一食】，我們堅持食材品質與料理細節， 不論是一碗拉麵，或是一盤燒肉， 都希望能帶給您最道地的日式風味。</p>
       </div>
-      <div class="mb-20 text-3xl">邀請您來【日一食】， 感受最真摯的美食饗宴！</div>
+      <div class="mb-20 text-2xl">
+        <p>我們邀請您來【日一食】， 感受最真摯的美食饗宴！</p>
+      </div>
     </div>
     <sakeArea />
   </div>
 </template>
 
 <script setup lang="ts">
-import {} from 'vue'
+import { ref, watch, onMounted } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useCommonStore } from '@/store/commonStore'
 
 import sakeArea from '@/components/aboutComponents/sakeArea.vue'
 import middleSwiper from '@/components/aboutComponents/middleSwiper.vue'
+
+const commonStore = useCommonStore()
+const { promiseType } = storeToRefs(commonStore)
+
+const promiseTop = ref<HTMLElement | null>(null)
+
+watch(
+  () => promiseType.value,
+  (newPromise) => {
+    setTimeout(() => {
+      if (newPromise) {
+        promiseTop.value?.scrollIntoView({ behavior: 'smooth' })
+        promiseType.value = false
+      }
+    }, 100)
+  },
+  { immediate: true },
+)
+
+onMounted(() => {
+  if (promiseType.value) {
+    promiseTop.value?.scrollIntoView({ behavior: 'smooth' })
+  }
+})
 </script>

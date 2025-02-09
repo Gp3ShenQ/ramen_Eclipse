@@ -1,6 +1,6 @@
 <template>
   <swiper
-    :slides-per-view="3"
+    :slides-per-view="5"
     :space-between="30"
     :centeredSlides="true"
     :loop="true"
