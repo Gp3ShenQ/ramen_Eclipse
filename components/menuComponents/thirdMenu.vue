@@ -6,7 +6,7 @@
     <div class="z-[2] m-20 w-full">
       <div class="flex justify-center gap-30 max-[1000px]:gap-10 ml-10 max-[800px]:ml-0 w-full">
         <div>
-          <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[170px]" src="/public/menu/price_title_plum.png" alt="" />
+          <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[200px]" src="/public/menu/price_title_plum.png" alt="" />
           <template v-for="item in menuPlum" :key="item.name">
             <div class="flex justify-between en-font-700 text-white text-lg leading-10">
               <div>
@@ -20,7 +20,7 @@
         </div>
         <div class="min-[1500px]:flex min-[1500px]:gap-30">
           <div>
-            <img class="mt-2 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[170px]" src="/public/menu/price_title_sake.png" alt="" />
+            <img class="mt-2 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[200px]" src="/public/menu/price_title_sake.png" alt="" />
             <template v-for="item in menuSake" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg leading-10">
                 <div>
@@ -33,7 +33,7 @@
             </template>
           </div>
           <div>
-            <img class="mt-10 min-[1500px]:-mt-9 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[170px]" src="/public/menu/price_title_drink.png" alt="" />
+            <img class="mt-10 min-[1500px]:-mt-9 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[200px]" src="/public/menu/price_title_drink.png" alt="" />
             <template v-for="item in menuDrink" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg leading-10">
                 <div>

@@ -27,7 +27,6 @@ const { menuBackground } = storeToRefs(commonStore)
 watch(
   () => route.path,
   () => {
-    console.log(route.path)
     if (route.path === '/menuView') {
       menuBackground.value = true
     } else {
