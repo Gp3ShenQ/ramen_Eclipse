@@ -35,7 +35,7 @@ const footerBottom = ref([
   {
     name: 'About Shop',
     image: '/footer/footerButton/about_shop.png',
-    router: '/',
+    router: 'storeInformationView',
   },
   {
     name: 'Shop',
