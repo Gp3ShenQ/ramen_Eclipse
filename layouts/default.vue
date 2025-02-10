@@ -1,6 +1,11 @@
 <template>
   <div class="relative w-full">
-    <div class="top-0 left-0 absolute flex justify-center bg-[url('/public/layout/background6.png')] w-full h-full"></div>
+    <template v-if="menuBackground">
+      <div class="top-0 left-0 absolute flex justify-center bg-[url('/public/menu/menu_background.png')] w-full h-full"></div>
+    </template>
+    <template v-else>
+      <div class="top-0 left-0 absolute flex justify-center bg-[url('/public/layout/background6.png')] w-full h-full"></div>
+    </template>
     <TopHeader />
     <NuxtPage />
     <Footer />
@@ -8,10 +13,28 @@
 </template>
 
 <script setup lang="ts">
-import {} from 'vue'
+import { onMounted, watch } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useCommonStore } from '@/store/commonStore'
 
+const route = useRoute()
 import TopHeader from '@/components/TopHeader.vue'
 import Footer from '@/components/Footer.vue'
+
+const commonStore = useCommonStore()
+const { menuBackground } = storeToRefs(commonStore)
+
+watch(
+  () => route.path,
+  () => {
+    console.log(route.path)
+    if (route.path === '/menuView') {
+      menuBackground.value = true
+    } else {
+      menuBackground.value = false
+    }
+  },
+)
 </script>
 
 <style lang="scss">
