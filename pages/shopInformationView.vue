@@ -1,7 +1,7 @@
 <template>
   <div class="relative mt-30 w-full">
-    <div class="flex max-[900px]:flex-col max-[900px]:items-center gap-20 p-10 w-full">
-      <div class="-mt-30 w-full max-w-[400px]">
+    <div class="flex max-[900px]:items-center max-[900px]:items-start gap-20 max-[530px]:gap-0 max-[900px]:gap-10 p-10 max-[900px]:p-2 w-full">
+      <div class="-mt-30 max-[900px]:-mt-10 w-full max-w-[200px] max-[900px]:max-w-[100px]">
         <img class="" src="/public/shopInformation/shop_title.png" alt="" />
       </div>
       <div class="w-full max-w-[800px]">
@@ -13,7 +13,7 @@
         <img class="w-full max-w-[250px]" src="/public/topHeader/Mark.png" alt="" />
       </div>
       <div class="flex min-[900px]:ml-50">
-        <div class="flex gap-5 en-font-700 text-white text-xs min-[900px]:text-lg leading-10">
+        <div class="flex gap-5 en-font-700 text-white text-xs min-[900px]:text-2xl leading-20">
           <div>
             <template v-for="item in shopTitle" :key="item.title">
               <p>{{ item.title }}</p>
@@ -31,14 +31,14 @@
     </div>
     <div class="relative bg-[url('/public/shopInformation/middle_background.png')] mt-10 p-20 max-[900px]:p-5 w-full">
       <div class="z-[2] relative flex max-[600px]:flex-col justify-center max-[900px]:justify-center items-center gap-0 gap-30 max-[900px]:gap-5 w-full max-[900px]:">
-        <div class="w-full max-w-[100px]">
+        <div class="w-full max-w-[200px]">
           <img src="/public/shopInformation/shop_position_text.png" alt="" />
         </div>
-        <div class="w-full max-w-[350px]">
+        <div class="flex justify-center w-full max-w-[700px]">
           <iframe
+            :width="iframeWidth"
+            :height="iframeHeight"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.092119328943!2d120.68933373872144!3d24.15607728261177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d60a776535f%3A0xb31626affe74e842!2z5paw5rCR6auY5LitKOS4ieawkei3ryk!5e0!3m2!1szh-TW!2stw!4v1739262399294!5m2!1szh-TW!2stw"
-            width="100%"
-            height="300"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="bg-[url('/public/shopInformation/bottom_background.png')] relative">
-      <div class="relative w-full h-full">
+      <div class="relative flex justify-center items-center w-full h-full">
         <img src="/public/shopInformation/shop_open_text.png" alt="" />
       </div>
       <div class="flex max-[600px]:flex-col justify-center gap-10 px-5 pb-30 w-full">
@@ -72,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import {} from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const shopTitle = [
   {
@@ -115,4 +115,21 @@ const shopData = [
     innerData: '200席',
   },
 ]
+
+const iframeWidth = ref<number>(300)
+const iframeHeight = ref<number>(350)
+
+const updateSlidesPerView = () => {
+  iframeWidth.value = window.innerWidth <= 990 ? 300 : 600
+  iframeHeight.value = window.innerWidth <= 990 ? 300 : 600
+}
+
+onMounted(() => {
+  updateSlidesPerView()
+  window.addEventListener('resize', updateSlidesPerView)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateSlidesPerView)
+})
 </script>

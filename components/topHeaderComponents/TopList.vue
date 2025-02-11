@@ -26,7 +26,7 @@ type DataList = {
 
 const dataList: DataList[][] = [
   [
-    { name: '日一食', router: '/' },
+    // { name: '日一食', router: '/' },
     { name: '關於日一食', router: 'aboutView' },
     { name: '我們的承諾', router: 'aboutView', query: 'promise' },
     { name: '選單', router: 'menuView' },
@@ -34,7 +34,7 @@ const dataList: DataList[][] = [
   [
     { name: '店鋪資訊', router: 'storeInformationView' },
     { name: '商店資訊', router: 'shopInformationView' },
-    { name: '招募資訊', router: '/' },
+    // { name: '招募資訊', router: '/' },
   ],
 ]
 

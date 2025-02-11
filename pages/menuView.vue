@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full">
-    <div class="flex items-end gap-10 max-[530px]:-mt-20 px-40 max-[1000px]:px-10 max-[1200px]:px-30 pt-30 max-[530px]:pt-0 w-full">
+    <div class="flex justify-center items-end gap-10 max-[530px]:-mt-20 px-40 max-[1000px]:px-10 max-[1200px]:px-30 pt-30 max-[530px]:pt-0 w-full">
       <div class="w-full max-w-[200px]">
         <img src="/public/menu/menu_title.png" alt="" />
       </div>
