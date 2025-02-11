@@ -10,8 +10,8 @@
         詳しくはこちら
       </button>
     </div>
-    <div class="my-5 max-[1000px]:mt-20 -ml-30 max-[1250px]:-ml-0 max-[1700px]:-ml-20 w-1/3 max-[1000px]:w-full">
+    <!-- <div class="my-5 max-[1000px]:mt-20 -ml-30 max-[1250px]:-ml-0 max-[1700px]:-ml-20 w-1/3 max-[1000px]:w-full">
       <img class="" src="/public/MiddleData/ramen_house.png" alt="" />
-    </div>
+    </div> -->
   </div>
 </template>

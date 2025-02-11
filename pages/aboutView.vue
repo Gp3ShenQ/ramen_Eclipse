@@ -9,7 +9,7 @@
       </div>
     </div>
     <div ref="promiseTop" class="flex flex-col items-center gap-20 px-20 max-[768px]:px-5 pt-10 en-font-700 text-[#E2DAB2] text-center">
-      <div class="">
+      <div>
         <div class="mb-10 text-3xl leading-10">歡迎來到【日一食】——極致拉麵與燒肉體驗</div>
         <p>在【日一食】，我們嚴選上等食材，融合傳統與創新，只為帶給您最純粹的日式美味。</p>
       </div>

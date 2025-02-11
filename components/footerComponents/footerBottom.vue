@@ -40,7 +40,7 @@ const footerBottom = ref([
   {
     name: 'Shop',
     image: '/footer/footerButton/inner_shop.png',
-    router: '/',
+    router: 'shopInformationView',
   },
 ])
 

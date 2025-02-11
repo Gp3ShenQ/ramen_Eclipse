@@ -33,7 +33,7 @@ const dataList: DataList[][] = [
   ],
   [
     { name: '店鋪資訊', router: 'storeInformationView' },
-    { name: '商店資訊', router: '/' },
+    { name: '商店資訊', router: 'shopInformationView' },
     { name: '招募資訊', router: '/' },
   ],
 ]

@@ -83,7 +83,7 @@ const images = computed<string[]>(() => {
 })
 
 const updateSlidesPerView = () => {
-  slidesPerView.value = window.innerWidth <= 500 ? 6 : 3
+  slidesPerView.value = window.innerWidth <= 500 ? 3 : 6
 }
 
 onMounted(() => {
