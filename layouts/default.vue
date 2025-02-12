@@ -17,10 +17,10 @@ import { onMounted, watch } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useCommonStore } from '@/store/commonStore'
 
-const route = useRoute()
 import TopHeader from '@/components/TopHeader.vue'
 import Footer from '@/components/Footer.vue'
 
+const route = useRoute()
 const commonStore = useCommonStore()
 const { menuBackground } = storeToRefs(commonStore)
 
@@ -86,5 +86,15 @@ watch(
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+page-enter-active,
+.page-leave-active {
+  transition: all 1s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(5rem);
 }
 </style>

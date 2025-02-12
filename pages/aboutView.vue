@@ -2,10 +2,10 @@
   <div class="relative w-full">
     <div class="flex justify-center gap-10 max-[530px]:-mt-20 px-40 max-[1000px]:px-10 max-[1200px]:px-30 pt-30 max-[530px]:pt-0 w-full">
       <div>
-        <img class="w-full max-w-[100px]" src="/public/about/about.png" alt="" />
+        <NuxtImg class="w-full max-w-[100px]" src="/about/about.png" alt="" />
       </div>
       <div>
-        <img class="w-full max-w-[500px]" src="/public/MiddleData/business_card.png" alt="" />
+        <NuxtImg class="w-full max-w-[500px]" src="/MiddleData/business_card.png" alt="" />
       </div>
     </div>
     <div ref="promiseTop" class="flex flex-col items-center gap-20 px-20 max-[768px]:px-5 pt-10 en-font-700 text-[#E2DAB2] text-center">

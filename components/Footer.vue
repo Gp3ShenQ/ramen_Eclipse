@@ -3,7 +3,7 @@
     <div class="top-0 left-0 absolute w-full h-full">
       <div class="top-0 left-0 z-[1] absolute bg-black opacity-40 w-full h-full"></div>
       <video class="relative w-full h-full object-cover" autoplay muted>
-        <source src="/public/footer/shrimp.mp4" type="video/mp4" />
+        <source src="/footer/shrimp.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="flex flex-col justify-center items-center w-full h-full">

@@ -2,15 +2,15 @@
   <div class="relative mt-30 w-full">
     <div class="flex max-[900px]:items-center max-[900px]:items-start gap-20 max-[530px]:gap-0 max-[900px]:gap-10 p-10 max-[900px]:p-2 w-full">
       <div class="-mt-30 max-[900px]:-mt-10 w-full max-w-[200px] max-[900px]:max-w-[100px]">
-        <img class="" src="/public/shopInformation/shop_title.png" alt="" />
+        <NuxtImg class="" src="/shopInformation/shop_title.png" alt="" />
       </div>
       <div class="w-full max-w-[800px]">
-        <img src="/public/MiddleData/ramen_house.png" alt="" />
+        <NuxtImg src="/MiddleData/ramen_house.png" alt="" />
       </div>
     </div>
     <div class="mt-20 p-10 w-full">
       <div class="flex justify-center w-full">
-        <img class="w-full max-w-[250px]" src="/public/topHeader/Mark.png" alt="" />
+        <NuxtImg class="w-full max-w-[250px]" src="/topHeader/Mark.png" alt="" />
       </div>
       <div class="flex min-[900px]:ml-50">
         <div class="flex gap-5 en-font-700 text-white text-xs min-[900px]:text-2xl leading-20">
@@ -32,7 +32,7 @@
     <div class="relative bg-[url('/public/shopInformation/middle_background.png')] mt-10 p-20 max-[900px]:p-5 w-full">
       <div class="z-[2] relative flex max-[600px]:flex-col justify-center max-[900px]:justify-center items-center gap-0 gap-30 max-[900px]:gap-5 w-full max-[900px]:">
         <div class="w-full max-w-[200px]">
-          <img src="/public/shopInformation/shop_position_text.png" alt="" />
+          <NuxtImg src="/shopInformation/shop_position_text.png" alt="" />
         </div>
         <div class="flex justify-center w-full max-w-[700px]">
           <iframe
@@ -49,7 +49,7 @@
     </div>
     <div class="bg-[url('/public/shopInformation/bottom_background.png')] relative">
       <div class="relative flex justify-center items-center w-full h-full">
-        <img src="/public/shopInformation/shop_open_text.png" alt="" />
+        <NuxtImg src="/shopInformation/shop_open_text.png" alt="" />
       </div>
       <div class="flex max-[600px]:flex-col justify-center gap-10 px-5 pb-30 w-full">
         <div>

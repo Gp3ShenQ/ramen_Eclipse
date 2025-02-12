@@ -1,12 +1,12 @@
 <template>
   <div class="relative flex max-[800px]:flex-col max-[800px]:items-center p-20 max-[800px]:p-5 w-full">
     <div class="z-[2] w-full max-w-[500px]">
-      <img src="/public/menu/thirdMenu_img4.png" alt="" />
+      <NuxtImg src="/menu/thirdMenu_img4.png" alt="" />
     </div>
     <div class="z-[2] m-20 w-full">
       <div class="flex justify-center gap-30 max-[1000px]:gap-10 ml-10 max-[800px]:ml-0 w-full">
         <div>
-          <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_plum.png" alt="" />
+          <NuxtImg class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_plum.png" alt="" />
           <template v-for="item in menuPlum" :key="item.name">
             <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
               <div>
@@ -20,7 +20,7 @@
         </div>
         <div class="min-[1500px]:flex min-[1500px]:gap-30">
           <div class="max-w-[500px]">
-            <img class="-mt-4 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_sake.png" alt="" />
+            <NuxtImg class="-mt-4 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_sake.png" alt="" />
             <template v-for="item in menuSake" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
                 <div>
@@ -33,7 +33,7 @@
             </template>
           </div>
           <div>
-            <img class="mt-10 min-[1500px]:-mt-9 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_drink.png" alt="" />
+            <NuxtImg class="mt-10 min-[1500px]:-mt-9 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_drink.png" alt="" />
             <template v-for="item in menuDrink" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
                 <div>
@@ -50,7 +50,7 @@
     </div>
   </div>
   <div class="flex justify-end max-[1500px]:justify-center opacity-30 -mt-100 w-full">
-    <img class="w-full max-w-[500px]" src="/public/menu/menu_house.png" alt="" />
+    <NuxtImg class="w-full max-w-[500px]" src="/menu/menu_house.png" alt="" />
   </div>
 </template>
 

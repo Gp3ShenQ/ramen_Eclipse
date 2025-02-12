@@ -15,7 +15,7 @@
   >
     <template v-for="(item, index) in images" :key="index">
       <swiper-slide class="flex justify-center">
-        <img :src="item" alt="" class="w-[350px] h-[350px]" />
+        <NuxtImg :src="item" alt="" class="w-[350px] h-[350px]" />
       </swiper-slide>
     </template>
   </swiper>

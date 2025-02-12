@@ -1,7 +1,7 @@
 <template>
   <div class="flex max-[1000px]:flex-col">
     <div class="max-[1000px]:hidden py-20 w-1/3">
-      <img class="max-w-[300px]" src="/public/MiddleData/ramen1.jpg" alt="" />
+      <NuxtImg class="max-w-[300px]" src="/MiddleData/ramen1.jpg" alt="" />
     </div>
     <div class="flex justify-center items-center max-[1000px]:mt-20 max-[1000px]:mb-20 w-1/3 max-[1000px]:w-full" @click="goPages('aboutView')">
       <button

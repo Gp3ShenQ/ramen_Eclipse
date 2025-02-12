@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-around gap-10 max-[530px]:mt-20 px-40 max-[1000px]:px-10 max-[1200px]:px-30 pt-30 max-[530px]:pt-0 w-full">
     <div class="max-[1300px]:mt-14">
-      <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_niku.png" alt="" />
+      <NuxtImg class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_niku.png" alt="" />
       <div>
         <template v-for="item in menuNiku" :key="item.name">
           <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="max-[400px]:mt-1.5 pl-120 max-[1300px]:pl-0">
-      <img class="-mt-80 max-[1300px]:-mt-15 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_ramen.png" alt="" />
+      <NuxtImg class="-mt-80 max-[1300px]:-mt-15 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_ramen.png" alt="" />
       <template v-for="item in menuRamen" :key="item.name">
         <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
           <div>

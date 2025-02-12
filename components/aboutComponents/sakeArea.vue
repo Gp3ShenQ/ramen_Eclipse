@@ -2,10 +2,10 @@
   <div class="flex max-[800px]:flex-col bg-[url('/public/about/background_white.png')] pt-20 w-full">
     <div class="flex max-[800px]:justify-center pl-10 max-[800px]:pl-0 w-full max-w-1/3 max-[800px]:max-w-full">
       <div class="w-full max-w-[500px]">
-        <img class="w-full" src="/public/about/sake_image1.png" alt="" />
+        <NuxtImg class="w-full" src="/about/sake_image1.png" alt="" />
       </div>
       <div class="-mt-10 -ml-20 w-full max-w-[200px]">
-        <img class="w-full" src="/public/about/sake_image2.png" alt="" />
+        <NuxtImg class="w-full" src="/about/sake_image2.png" alt="" />
       </div>
     </div>
     <div class="flex flex-col justify-center items-center max-[800px]:mt-10 px-20 max-[800px]:px-10 w-full max-w-1/3 max-[800px]:max-w-full">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="mt-60 max-[800px]:mt-10 mb-30 max-[800px]:px-10 w-full w-full max-w-[500px] max-w-1/3 max-[800px]:max-w-full">
-      <img class="w-full" src="/public/about/sake_image3.png" alt="" />
+      <NuxtImg class="w-full" src="/about/sake_image3.png" alt="" />
     </div>
   </div>
 </template>

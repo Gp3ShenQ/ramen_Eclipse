@@ -2,7 +2,7 @@
   <div class="px-60 max-sm:px-5 max-md:px-15 max-lg:px-30 pt-30 w-full">
     <div class="z-10 relative flex justify-between w-full">
       <div class="relative flex max-[550px]:flex-col items-center gap-10">
-        <img class="-mt-25 w-full max-w-[100px] cursor-pointer" src="/public/topHeader/Mark.png" alt="" @click="toIndex" />
+        <NuxtImg class="-mt-25 w-full max-w-[100px] cursor-pointer" src="/topHeader/Mark.png" alt="" @click="toIndex" />
         <TopList />
       </div>
       <div class="w-auto h-full">

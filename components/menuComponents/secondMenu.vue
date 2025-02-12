@@ -3,7 +3,7 @@
     <div class="z-[2] relative flex max-[700px]:flex-col gap-30">
       <div class="flex gap-30 max-[450px]:gap-10">
         <div>
-          <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_vegetable.png" alt="" />
+          <NuxtImg class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_vegetable.png" alt="" />
           <div>
             <template v-for="item in menuVegetables" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-15 min-[1300px]:leading-10">
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div>
-          <img class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_rice.png" alt="" />
+          <NuxtImg class="mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_rice.png" alt="" />
           <div>
             <template v-for="item in menuRice" :key="item.name">
               <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="mt-2.5 pl-50 max-[1300px]:pl-0">
-        <img class="-mt-80 max-[1300px]:-mt-0 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/public/menu/price_title_soup.png" alt="" />
+        <NuxtImg class="-mt-80 max-[1300px]:-mt-0 mb-5 border-[#D3D5D4] border-b-[4px] border-double w-full max-w-[500px]" src="/menu/price_title_soup.png" alt="" />
         <template v-for="item in menuSoup" :key="item.name">
           <div class="flex justify-between en-font-700 text-white text-lg min-[1300px]:text-4xl leading-15 min-[1300px]:leading-10">
             <div>
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="top-50 right-50 absolute opacity-40 max-w-[300px]">
-      <img src="/public/menu/menu_middle_sake.png" alt="" />
+      <NuxtImg src="/menu/menu_middle_sake.png" alt="" />
     </div>
   </div>
 </template>

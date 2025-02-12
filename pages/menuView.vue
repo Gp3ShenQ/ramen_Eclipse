@@ -2,24 +2,24 @@
   <div class="relative w-full">
     <div class="flex justify-center items-end gap-10 max-[530px]:-mt-20 px-40 max-[1000px]:px-10 max-[1200px]:px-30 pt-30 max-[530px]:pt-0 w-full">
       <div class="w-full max-w-[200px]">
-        <img src="/public/menu/menu_title.png" alt="" />
+        <NuxtImg src="/menu/menu_title.png" alt="" />
       </div>
       <div class="w-full max-w-[600px]">
-        <img src="/public/menu/menu_ramen.png" alt="" />
+        <NuxtImg src="/menu/menu_ramen.png" alt="" />
       </div>
     </div>
     <firstMenu />
     <div class="flex justify-around mt-30 max-[820px]:px-5 w-full">
       <div class="flex mt-20">
         <div class="w-full max-w-[300px]">
-          <img src="/public/menu/senMenu_img1.png" alt="" />
+          <NuxtImg src="/menu/senMenu_img1.png" alt="" />
         </div>
         <div class="-mt-30 -ml-10 w-full max-w-[200px]">
-          <img src="/public/menu/senMenu_img2.png" alt="" />
+          <NuxtImg src="/menu/senMenu_img2.png" alt="" />
         </div>
       </div>
       <div class="-mt-70 max-[1300px]:mt-0 w-full max-w-[300px]">
-        <img src="/public/menu/senMenu_img3.png" alt="" />
+        <NuxtImg src="/menu/senMenu_img3.png" alt="" />
       </div>
     </div>
     <secondMenu />

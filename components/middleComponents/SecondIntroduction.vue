@@ -1,11 +1,11 @@
 <template>
   <div class="flex max-[1000px]:flex-col justify-between">
-    <div class="flex flex-col justify-around max-[1000px]:hidden w-1/3">
+    <div class="max-[1000px]:hidden flex flex-col justify-around w-1/3">
       <div class="flex justify-center max-[1000px]:items-center">
-        <img class="max-w-[400px]" src="/public/MiddleData/niku.png" alt="" />
+        <NuxtImg class="max-w-[400px]" src="/MiddleData/niku.png" alt="" />
       </div>
       <div class="flex justify-end">
-        <img class="max-w-[500px]" src="/public/MiddleData/inner_house.png" alt="" />
+        <NuxtImg class="max-w-[500px]" src="/MiddleData/inner_house.png" alt="" />
       </div>
     </div>
     <div class="w-1/3 max-[1000px]:w-full">
@@ -16,8 +16,8 @@
           <p>我們選用來自日本的品牌食材（ブランド食材）</p>
           <p>為您奉上最正宗的美味體驗。</p>
         </div>
-        <div class="flex justify-center min-[1000px]:hidden">
-          <img class="w-full max-w-[400px]" src="/public/MiddleData/niku.png" alt="" />
+        <div class="min-[1000px]:hidden flex justify-center">
+          <NuxtImg class="w-full max-w-[400px]" src="/MiddleData/niku.png" alt="" />
         </div>
         <div class="flex flex-col gap-5 mt-50 max-[1000px]:mt-5 en-font-400 text-center">
           <p>我們選用優質的日本食材（日本の食材）</p>
@@ -25,8 +25,8 @@
           <p>搭配手工製作的麵條（麺）</p>
           <p>讓您每一口都能感受到本格的な風味</p>
         </div>
-        <div class="flex justify-center min-[1000px]:hidden">
-          <img class="w-full max-w-[400px]" src="/public/MiddleData/inner_house.png" alt="" />
+        <div class="min-[1000px]:hidden flex justify-center">
+          <NuxtImg class="w-full max-w-[400px]" src="/MiddleData/inner_house.png" alt="" />
         </div>
         <div class="flex flex-col gap-5 mt-50 max-[1000px]:mt-5 px-5 en-font-400 text-center">
           <p>我們使用品牌地鶏（ブランド地鶏）和其他頂級食材</p>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="flex max-[1000px]:justify-center items-center max-[1000px]:mt-5 w-1/3 max-[1000px]:w-full">
-      <img class="w-full max-w-[400px]" src="/public/MiddleData/ramen3.jpg" alt="" />
+      <NuxtImg class="w-full max-w-[400px]" src="/MiddleData/ramen3.jpg" alt="" />
     </div>
   </div>
 </template>

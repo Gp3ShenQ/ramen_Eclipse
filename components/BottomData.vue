@@ -1,7 +1,7 @@
 <template>
-  <div class="relative z-[2] p-10 w-full">
+  <div class="z-[2] relative p-10 w-full">
     <div class="top-0 left-0 absolute w-full h-full">
-      <img class="w-full h-full" src="/public/bottomData/background.png" alt="" />
+      <NuxtImg class="w-full h-full" src="/bottomData/background.png" alt="" />
     </div>
     <div class="relative">
       <topData />
