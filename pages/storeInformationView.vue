@@ -1,12 +1,12 @@
 <template>
   <div class="relative mb-40 w-full">
     <div class="z-[2] flex max-[720px]:justify-center gap-20 max-[720px]:gap-0 px-30 max-[720px]:px-5 pt-30 max-[530px]:pt-10 w-full">
-      <div class="-mt-50 max-[720px]:-mt-30">
+      <div class="-mt-50 max-[900px]:-mt-30">
         <NuxtImg class="" src="/storeInformation/store_title_text.png" alt="" />
       </div>
 
       <div>
-        <NuxtImg class="w-full max-w-[500px]" src="/storeInformation/store_title.png" alt="" />
+        <NuxtImg class="w-full max-w-[800px]" src="/storeInformation/store_title.png" alt="" />
       </div>
     </div>
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="relative mt-30 w-full">
-    <div class="flex max-[900px]:items-center max-[900px]:items-start gap-20 max-[530px]:gap-0 max-[900px]:gap-10 p-10 max-[900px]:p-2 w-full">
-      <div class="-mt-30 max-[900px]:-mt-10 w-full max-w-[200px] max-[900px]:max-w-[100px]">
-        <NuxtImg class="" src="/shopInformation/shop_title.png" alt="" />
+  <div class="relative mb-40 w-full">
+    <div class="z-[2] flex max-[720px]:justify-center gap-20 max-[720px]:gap-0 px-30 max-[720px]:px-5 pt-30 max-[530px]:pt-10 w-full">
+      <div class="-mt-50 max-[900px]:-mt-30">
+        <NuxtImg class="" src="/shopInformation/shop_title2.png" alt="" />
       </div>
       <div class="w-full max-w-[800px]">
         <NuxtImg src="/MiddleData/ramen_house.png" alt="" />

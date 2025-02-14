@@ -16,6 +16,8 @@
 import { onMounted, watch } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useCommonStore } from '@/store/commonStore'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import TopHeader from '@/components/TopHeader.vue'
 import Footer from '@/components/Footer.vue'
@@ -23,6 +25,37 @@ import Footer from '@/components/Footer.vue'
 const route = useRoute()
 const commonStore = useCommonStore()
 const { menuBackground } = storeToRefs(commonStore)
+
+const GSAPinit = () => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.video-area',
+      start: 'center 43%',
+      end: 'center 30%',
+      scrub: true,
+    },
+  })
+
+  tl.fromTo(
+    '.video-area',
+    { 'clip-path': 'inset(30% 10% 0 10%)' }, // 初始值
+    { 'clip-path': 'inset(0% 0% 0% 0%)' }, // 最終值
+  )
+
+  // const tk = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: '.mask',
+  //     start: 'center 0%',
+  //     end: 'center -30%',
+  //     scrub: true,
+  //   },
+  // })
+  // tk.fromTo(
+  //   '.mask',
+  //   { 'background-color': 'rgba(0,0,0, 0)' }, // 初始值
+  //   { 'background-color': 'rgba(0,0,0, 0.6)' }, // 最終值
+  // )
+}
 
 watch(
   () => route.path,
