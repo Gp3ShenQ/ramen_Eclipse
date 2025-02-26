@@ -1,10 +1,10 @@
 <template>
-  <div class="z-[2] flex justify-center items-center w-full h-full">
+  <div class="z-[2] flex justify-center items-center w-full h-full max-h-[640px]">
     <div class="w-1/3">
       <NuxtImg class="w-full" src="/footer/solid_ramen.png" alt="" />
     </div>
     <div class="w-1/3">
-      <NuxtImg class="w-full" src="/footer/mark_footer.png" alt="" />
+      <img class="w-full max-w-[500px]" src="/public/footer/mark_footer.png" alt="" />
     </div>
     <div class="flex flex-col w-1/3">
       <div class="flex justify-center w-full">
